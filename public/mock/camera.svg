@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a9099"/>
+      <stop offset="45%" stop-color="#6d737c"/>
+      <stop offset="100%" stop-color="#3a3f46"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a5058"/>
+      <stop offset="100%" stop-color="#2a2e34"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#eef3f8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#eef3f8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- hangar interior approximating cabin camera -->
+  <rect width="640" height="360" fill="url(#wall)"/>
+  <rect y="230" width="640" height="130" fill="url(#floor)"/>
+  <!-- ceiling structure -->
+  <rect x="0" y="0" width="640" height="28" fill="#5a6068"/>
+  <rect x="40" y="28" width="12" height="200" fill="#9aa3ad" opacity="0.55"/>
+  <rect x="580" y="28" width="12" height="200" fill="#9aa3ad" opacity="0.55"/>
+  <!-- open hatch / light shaft -->
+  <rect x="250" y="40" width="140" height="200" fill="url(#light)"/>
+  <rect x="260" y="50" width="120" height="16" rx="2" fill="#c5d0db" opacity="0.8"/>
+  <!-- left equipment rack -->
+  <rect x="70" y="100" width="90" height="130" rx="4" fill="#555c66" stroke="#7d8692" stroke-width="2"/>
+  <rect x="82" y="115" width="66" height="10" rx="2" fill="#2fd4e8" opacity="0.55"/>
+  <rect x="82" y="135" width="66" height="8" rx="2" fill="#22c55e" opacity="0.4"/>
+  <rect x="82" y="152" width="40" height="8" rx="2" fill="#f59e0b" opacity="0.5"/>
+  <rect x="82" y="175" width="54" height="30" rx="2" fill="#2a2e34"/>
+  <!-- right rack -->
+  <rect x="470" y="90" width="100" height="140" rx="4" fill="#4e555e" stroke="#7d8692" stroke-width="2"/>
+  <rect x="485" y="110" width="70" height="50" rx="3" fill="#1a1f26"/>
+  <circle cx="520" cy="135" r="12" fill="#3b82f6" opacity="0.5"/>
+  <!-- floor markings -->
+  <path d="M200 250 L440 250" stroke="#c5d0db" stroke-width="2" opacity="0.25" stroke-dasharray="8 6"/>
+  <path d="M200 280 L440 280" stroke="#c5d0db" stroke-width="2" opacity="0.18" stroke-dasharray="8 6"/>
+  <!-- small maintenance figure silhouette -->
+  <ellipse cx="320" cy="300" rx="28" ry="8" fill="#1a1f26" opacity="0.45"/>
+  <rect x="308" y="250" width="24" height="48" rx="8" fill="#2b3138"/>
+  <circle cx="320" cy="242" r="10" fill="#2b3138"/>
+  <!-- vignette -->
+  <rect width="640" height="360" fill="none"/>
+  <rect x="0" y="0" width="640" height="360" fill="#000" opacity="0.08"/>
+  <text x="20" y="24" fill="#e8f1fb" font-family="Microsoft YaHei,sans-serif" font-size="14" opacity="0.85">机场3east 舱内监控</text>
+</svg>
