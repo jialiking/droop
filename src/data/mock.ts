@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset'
 import type {
   AirportCardItem,
   CabinDeviceDetail,
@@ -60,7 +61,7 @@ export const AIRPORT_CARDS: AirportCardItem[] = [
     online: 'online',
     onlineLabel: '在线',
     deviceId: 'cabin-3',
-    thumbnail: '/mock/cabin.svg',
+    thumbnail: asset('mock/cabin.svg'),
   },
   {
     id: 'drone-3',
@@ -72,7 +73,7 @@ export const AIRPORT_CARDS: AirportCardItem[] = [
     online: 'online',
     onlineLabel: '在线',
     deviceId: 'drone-3',
-    thumbnail: '/mock/drone.svg',
+    thumbnail: asset('mock/drone.svg'),
     parentId: 'cabin-3',
   },
   {
@@ -85,7 +86,7 @@ export const AIRPORT_CARDS: AirportCardItem[] = [
     online: 'online',
     onlineLabel: '在线',
     deviceId: 'cabin-2',
-    thumbnail: '/mock/cabin.svg',
+    thumbnail: asset('mock/cabin.svg'),
   },
   {
     id: 'drone-2',
@@ -97,7 +98,7 @@ export const AIRPORT_CARDS: AirportCardItem[] = [
     online: 'offline',
     onlineLabel: '离线',
     deviceId: 'drone-2',
-    thumbnail: '/mock/drone.svg',
+    thumbnail: asset('mock/drone.svg'),
     parentId: 'cabin-2',
   },
 ]

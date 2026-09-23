@@ -1,5 +1,6 @@
 import { Bell, BookOpen, Maximize2, Menu } from 'lucide-react'
 import { cn } from '@/lib/cn'
+import { asset } from '@/lib/asset'
 
 export function Header() {
   return (
@@ -34,7 +35,7 @@ export function Header() {
           进入大屏
         </button>
         <div className="ml-2 flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-app-border bg-app-card">
-          <img src="/mock/avatar.svg" alt="用户头像" className="h-full w-full" />
+          <img src={asset('mock/avatar.svg')} alt="用户头像" className="h-full w-full" />
         </div>
         <HeaderIconBtn label="菜单" className="ml-1">
           <Menu className="h-4 w-4" />

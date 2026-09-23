@@ -6,6 +6,7 @@ import { CameraFeed } from '@/components/panorama/CameraFeed'
 import { DeviceDetail } from '@/components/panorama/DeviceDetail'
 import { StatsBar } from '@/components/panorama/StatsBar'
 import { useDeviceStore } from '@/stores/useDeviceStore'
+import { asset } from '@/lib/asset'
 
 export function VerticalPanoramaPage() {
   const selectedDeviceId = useDeviceStore((s) => s.selectedDeviceId)
@@ -31,7 +32,7 @@ export function VerticalPanoramaPage() {
           <div className="flex min-h-0 flex-1 flex-col pt-2">
             <CameraFeed
               label={detail?.cameraLabel ?? '机场'}
-              src="/mock/camera.svg"
+              src={asset('mock/camera.svg')}
             />
           </div>
         </div>
